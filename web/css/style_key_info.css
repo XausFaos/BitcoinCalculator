@@ -1,0 +1,78 @@
+.private-key {
+    position: absolute;
+    left: 220px;
+    top: 25px;
+    width: 830px;
+}
+
+.key-int {
+    position: absolute;
+    left: 220px;
+    top: 130px;
+    width: 830px;
+}
+
+.key-hex {
+    position: absolute;
+    left: 220px;
+    top: 165px;
+    width: 830px;
+}
+
+.public-key-x {
+    position: absolute;
+    left: 220px;
+    width: 400px;
+    top: 60px;
+}
+
+.public-key-y {
+    position: absolute;
+    left: 220px;
+    top: 95px;
+    width: 400px;
+}
+
+.address-c {
+    position: absolute;
+    left: 650px;
+    top: 60px;
+    width: 400px;
+}
+
+.address-u {
+    position: absolute;
+    left: 650px;
+    top: 95px;
+    width: 400px;
+}
+
+.balance-u {
+    position: absolute;
+    left: 1076px;
+    top: 95px;
+    width: 120px;
+}
+
+.balance-c {
+    position: absolute;
+    left: 1076px;
+    top: 60px;
+    width: 120px;
+}
+
+.check-balance {
+    position: absolute;
+    left: 1074px;
+    top: 25px;
+    height: 15px;
+    width: 15px;
+}
+
+.checkbox-balance-label {
+    position: absolute;
+    left: 1097px;
+    top: 27px;
+    color: white;
+    font-size: 14px;
+}

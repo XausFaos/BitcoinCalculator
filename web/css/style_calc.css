@@ -1,0 +1,148 @@
+.data-1 {
+    background-color: #1a1b1d;
+    position: absolute;
+    top: 25px;
+    left: 220px;
+    width: 830px;
+    height: 230px;
+}
+
+.data-2 {
+    background-color: #1a1b1d;
+    position: absolute;
+    top: 25px;
+    left: 1072px;
+    width: 830px;
+    height: 230px;
+}
+
+.data-3 {
+    background-color: #1a1b1d;
+    position: absolute;
+    top: 280px;
+    left: 220px;
+    width: 830px;
+    height: 230px;
+}
+
+.data-4 {
+    background-color: #1a1b1d;
+    position: absolute;
+    top: 280px;
+    left: 1072px;
+    width: 830px;
+    height: 230px;
+}
+
+.calc {
+    background-color: #1a1b1d;
+    position: absolute;
+    top: 535px;
+    left: 220px;
+    width: 830px;
+    height: 95px;
+}
+
+.calc-input {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 305px;
+}
+
+.calc-result-hex {
+    position: absolute;
+    left: 361px;
+    top: 20px;
+    width: 445px;
+}
+
+.calc-result-dec {
+    position: absolute;
+    left: 20px;
+    top: 55px;
+    width: 785px;
+}
+
+.private-key {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 787px;
+}
+
+.a {
+    position: absolute;
+    top: 53px;
+    left: 20px;
+    width: 380px;
+}
+
+.b {
+    position: absolute;
+    top: 53px;
+    left: 426px;
+    width: 380px;
+}
+
+.r {
+    position: absolute;
+    top: 86px;
+    left: 20px;
+    width: 787px;
+}
+
+.s {
+    position: absolute;
+    top: 119px;
+    left: 20px;
+    width: 787px;
+}
+
+.z {
+    position: absolute;
+    top: 152px;
+    left: 20px;
+    width: 787px;
+}
+
+.k {
+    position: absolute;
+    top: 185px;
+    left: 20px;
+    width: 787px;
+}
+
+.buttons {
+    background-color: #1a1b1d;
+    position: absolute;
+    left: 220px;
+    top: 800px;
+    width: 1680px;
+    height: 200px;
+}
+
+.button-all-random-data {
+    left: 20px;
+    top: 20px;
+    position: absolute;
+}
+
+.button-clear {
+    position: absolute;
+    left: 20px;
+    top: 50px
+}
+
+.button-switch-type {
+    position: absolute;
+    left: 20px;
+    top: 160px;
+    width: 180px;
+}
+
+.button-switch-curve {
+    position: absolute;
+    left: 220px;
+    top: 160px;
+}

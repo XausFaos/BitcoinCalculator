@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_key_info.css" />
+    <title>Document</title>
+    <script src="eel.js"></script>
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="keyinfo.html">Get key info</a>
+        <a href="calulator.html">Calculator</a>
+        <a href="#">Get address info</a>
+        <a href="#">Scan double R</a>
+    </div>
+
+    <div>
+        <input type="text" id="Key" class="private-key input-value" placeholder="key [text, hex, decimal]" onchange="get_key_info();">
+        <input type="text" id="Bx" class="public-key-x input-value" placeholder="public key X" disabled="true">
+        <input type="text" id="By" class="public-key-y input-value" placeholder="public key Y" disabled="true">
+        <input type="text" id="AddrC" class="address-c input-value" placeholder="address compress" disabled="true">
+        <input type="text" id="AddrU" class="address-u input-value" placeholder="address uncompress" disabled="true">
+        <input type="text" id="KeyDec" class="key-int input-value" placeholder="key in decimal" disabled="true">
+        <input type="text" id="KeyHex" class="key-hex input-value" placeholder="address hex" disabled="true">
+        <input type="text" id="BalanceU" class="balance-u input-value" placeholder="balance" disabled="true">
+        <input type="text" id="BalanceC" class="balance-c input-value" placeholder="balance" disabled="true">
+        <input type="checkbox" id="CheckBalance" name="CheckBalance" class="check-balance" value="on"><label class="checkbox-balance-label" for="CheckBalance">Check balance</label>
+
+    </div>
+    <script type="text/javascript">
+        eel.set_curve(true)();
+    </script>
+    <script type="text/javascript">
+        async function get_key_info() {
+            let key = document.getElementById("Key").value;
+            let balance_flag = document.getElementById("CheckBalance").checked;
+            let info = await eel.get_private_key_info(key, balance_flag)();
+            document.getElementById("Bx").value = info[0];
+            document.getElementById("By").value = info[1];
+            document.getElementById("AddrC").value = info[5];
+            document.getElementById("AddrU").value = info[4];
+            document.getElementById("KeyDec").value = info[2];
+            document.getElementById("KeyHex").value = info[3];
+            document.getElementById("BalanceC").value = info[6];
+            document.getElementById("BalanceU").value = info[7];
+        }
+    </script>
+</body>
+
+</html>
